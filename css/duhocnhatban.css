@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+
+html, body, div, h1, h2, p, a, img, .ulbv, .libv, .headerbv, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+
+.duhocnhatban {
+	margin-top: 120px
+}
+
+.headerbv, section {
+	display: block
+}
+
+body {
+	line-height: 1;
+}
+
+.ulbv {
+	list-style: none;
+}
+
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		background: #f5f7fa;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 300;
+		color: #52575c;
+		line-height: 1.75em;
+		font-size: 14pt;
+	}
+
+	h1, h2 {
+		font-weight: 300;
+		color: #52575c;
+	}
+
+	h2 {
+		font-size: 2em;
+		line-height: 1.25em;
+	}
+
+	a {
+		transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		color: inherit;
+		text-decoration-line: none;
+	}
+
+		a:hover {
+			color: #f35858;
+		}
+
+	p, .ulbv {
+		margin-bottom: 1.5em;
+	}
+
+	.feature {
+		text-align: center;
+	}
+
+/* Sections */
+
+	section {
+		margin-bottom: 1em;
+	}
+
+	.headerbv {
+		margin-bottom: 1.5em;
+	}
+
+/* Container */
+
+	.container {
+		margin: 0 auto;
+		max-width: 100%;
+		width: 1200px;
+	}
+
+/* Row */
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
+	}
+
+		.row > * {
+			box-sizing: border-box;
+			padding: 50px 0 0 50px;
+		}
+
+		.row > .col-4 {
+			width: 33.33333%;
+		}
+
+/* Image */
+
+	.image {
+		transition: opacity 0.25s ease-in-out;
+		outline: 0;
+		border: 0;
+	}
+
+		.image img {
+			width: 100%;
+		}
+
+		.image.featured {
+			width: 100%;
+			margin: 0 0 3em 0;
+		}
+
+	a.image:hover {
+		opacity: 0.85;
+	}
+
+
+/* Actions */
+
+	ul.actions {
+		padding-top: 1em;
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.actions.major {
+			text-align: center;
+		}
+
+		ul.actions li {
+			display: inline-block;
+			margin-left: 1em;
+			padding-left: 0;
+		}
+
+			ul.actions li:first-child {
+				margin-left: 0;
+			}
+
+/* Button */
+
+	.button {
+		transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		display: inline-block;
+		color: inherit;
+		background: none;
+		text-decoration: none;
+		border: solid 1px #c2c7cc;
+		border-radius: 0.35em;
+		padding: 0.8em 2em 0.8em 2em;
+		cursor: pointer;
+		outline: 0;
+	}
+
+		.button:hover {
+			color: #f35858;
+			border-color: rgba(243, 88, 88, 0.5);
+		}
+
+/* Wrappers */
+
+	.wrapper {
+		position: relative;
+		background: #fff;
+		overflow-x: hidden;
+		padding: 2em 0 3em 0;
+	}
+
+	.image-wrapper {
+		position: relative;
+	}
+
+		.image-wrapper .image {
+			position: relative;
+		}
+
+		.image-wrapper.first:before {
+			content: '';
+			display: block;
+			width: 2000%;
+			height: 100%;
+			position: absolute;
+			left: -1000%;
+			top: 0;
+		}
+
+.noidung {
+	padding: 5em 10em;
+	margin-top: 120px
+}
+.tieudebaiviet {
+	font-size: 2em;
+	font-weight: 500;
+	color: #FF7088;
+	padding-bottom: 1em
+}
+.doanvanban {
+	padding: 0 2em;
+}
+.hinhanh {
+	text-align: center;
+}
+.hinh1 {
+	width: 50em
+}
